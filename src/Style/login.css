@@ -1,0 +1,157 @@
+.login-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+
+    background-color: var(--unnamed-color-white);
+}
+
+.login-content {
+    width: 120%;
+    height: 100%;
+    background: url('../Images/pieza1.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    z-index: 2
+}
+
+.login-image {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius: 50%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+
+
+.login-image img {
+    width: 80%;
+    height: auto;
+}
+
+
+.login-form-content {
+    position: relative;
+    top: 0;
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 40px;
+    z-index: 1;
+}
+
+.login-form-content h2 {
+    color: var(--unnamed-color-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 6px solid var(--unnamed-color-one);
+    width: 448px;
+    font-size: 25px;
+}
+
+.login-content-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.login-inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-inputs input {
+    width: 448px;
+    height: 48px;
+    box-shadow: 2px 3px 4px #00000029;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    padding: 0 15px;
+}
+
+.login-inputs input::placeholder {
+    color: #A4AFB7;
+    font-size: 18px;
+}
+
+.link-forget-password {
+    width: 448px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding:  15px 0px;
+}
+
+.link-forget-password a {
+    font-size: 14px;
+    color: #A4AFB7;
+    text-decoration: none;
+}
+
+.login-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    gap: 40px;
+}
+
+.login-buttons button {
+    width: 240px;
+    height: 75px;
+    font-size: 20px;
+    background: var(--unnamed-color-two);
+    border: none;
+    outline: none;
+    color: var(--unnamed-color-white);
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.login-buttons p {
+    font-size: 14px;
+    color: #A4AFB7;
+    text-transform: uppercase;
+}
+
+.login-buttons p a{
+    color: #015F91;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.login-error {
+    width: 100%;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ff5722;
+    padding: 0 5px;
+}
+
+
