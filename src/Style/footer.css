@@ -71,3 +71,34 @@
 .footer-links-img img {
     width: 50px;
 } 
+
+
+@media (max-width: 1330px) {
+    .footer-container {
+        grid-template-columns: auto auto;
+        gap: 40px;
+        height: auto;
+    }
+}
+
+@media (max-width: 850px) {
+    .footer-container {
+        grid-template-columns: auto;
+        clip-path: none;
+        padding: 40px;
+    }
+}
+
+@media (max-width: 500px) {
+    .footer-links-button {
+        width: 300px;
+    }
+
+    .footer-links-img {
+        padding: 10px;
+    }
+
+    .footer-links-img img {
+        width: 20px;
+    }
+}

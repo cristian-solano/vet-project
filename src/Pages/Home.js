@@ -8,6 +8,8 @@ import cat from '../Images/cat.png'
 import house from '../Images/house.png'
 import huella from '../Images/huella.png'
 import profile from '../Images/profile-woman.jpeg'
+import profile2 from '../Images/profileman.jpg'
+import profile3 from '../Images/profilew.jpg'
 import salchicha from '../Images/salchi.png'
 import kid from '../Images/kid.png'
 import calendar from '../Images/calendar.png'
@@ -20,9 +22,9 @@ const Home = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const containers = [
-    { id: 1, content: "Kenned Dsouza1", text: "I like that I got to meet the dog Walker who is walking my dog daily and consult with her. I also appreciate the daily communication I get about the dog and how my dog is doing", color: "#FF6752"},
-    { id: 2, content: "Kenned Dsouza2", text: "I like that I got to meet the dog Walker who is walking my dog daily and consult with her. I also appreciate the daily communication I get about the dog and how my dog is doing", color: "#4487FF" },
-    { id: 3, content: "Kenned Dsouza3", text: "I like that I got to meet the dog Walker who is walking my dog daily and consult with her. I also appreciate the daily communication I get about the dog and how my dog is doing", color: "#FF6752" },
+    { id: 1, content: "Luisa Kent", text: "My dog Max is my best friend. I love how he always knows when I need a boost, and his positive energy inspires me in my creative work. Our walks together are my favorite moments of the day.", color: "#FF6752", myPic: `${profile}`},
+    { id: 2, content: "Mary Glenn",text: "I adopted Luna two years ago, and she has completely changed my life. It’s amazing how this little being can fill you with unconditional love. I love how she’s always ready to play or just sit with me while I work.", color: "#4487FF", myPic: `${profile3}` },
+    { id: 3, content: "Daniel Rojas", text: "My dog Rocky is like another member of my family. He makes me laugh with his antics and reminds me how important it is to enjoy the little things. Taking care of him has also taught me responsibility and empathy.", color: "#FF6752", myPic: `${profile2}` },
   ];
 
   const handlePrev = () => {
@@ -94,7 +96,7 @@ const Home = () => {
           <div className='home-section-carrousel'>
             {containers.map((container, index) => (
               <div key={container.id} className={`home-carousel-item ${currentIndex === index ? "active" : "inactive"}`} style={{ backgroundColor: container.color }}>
-                <img src={profile} alt="profile"/>
+                <img src={container.myPic} alt="profile"/>
                 <h2>{container.content}</h2>
                 <p>{container.text}</p>
               </div>

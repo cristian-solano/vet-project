@@ -24,8 +24,8 @@
 }
 
 .login-image {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     background-color: white;
     border-radius: 50%;
     display: none;
@@ -37,7 +37,7 @@
 
 
 .login-image img {
-    width: 80%;
+    width: 70%;
     height: auto;
 }
 
@@ -155,3 +155,89 @@
 }
 
 
+@media (max-width:1400px) {
+    .login-content {
+        width: 100%;
+        background: none;
+        background-color: var(--unnamed-color-one);
+    }
+
+    .login-image {
+        display: flex;
+    }
+
+    .login-form-content {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1104px) {
+    .login-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--unnamed-color-one);
+        padding: 20px 20px;
+    }
+
+    .login-content {
+        background-color: transparent;
+    }
+
+    .login-form-content {
+        width: initial;
+        background-color: var(--unnamed-color-white);
+        padding: 40px;
+        border-radius: 40px;
+        box-shadow: 2px 3px 4px #00000029;
+    }
+}
+
+@media (max-width: 605px) {
+    .login-image {
+        width: 300px;
+        height: 300px;
+    }
+    .login-image img {
+        width: 50%;
+    }
+    .login-form-content {
+        padding: 40px 20px;
+    }
+
+    .login-form-content h2 {
+        width: 300px;
+    }
+
+    .login-inputs input {
+        width: 300px;
+    }
+
+    .link-forget-password {
+        width: 300px;
+    }
+}
+
+@media (max-width: 496px) {
+
+    .login-form-content h2 {
+        width: 200px;
+    }
+
+    .login-inputs input {
+        width: 200px;
+    }
+
+    .link-forget-password {
+        width: 200px;
+    }
+
+    .login-buttons button {
+        width: 200px;
+        height: 50px;
+        font-size: 15px;
+    }
+    
+}

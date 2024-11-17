@@ -82,3 +82,16 @@
         clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
     }
 }
+
+@media (max-width: 768px) {
+    .nav-link-list {
+        width: 65%;
+    }
+
+}
+
+@media (max-width: 465px) {
+    .nav-link-list {
+        width: 100%;
+    }
+}
