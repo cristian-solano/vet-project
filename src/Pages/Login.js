@@ -7,7 +7,7 @@ import getInLogin from '../Services/getInLogin'
 
 const Login = () => {
 
-    const {register, handleSubmit, formState: {errors, isValid}} = useForm()
+    const {register, handleSubmit, formState: {errors}} = useForm()
     const navigate = useNavigate()
 
       const onSubmit = (res) => {
