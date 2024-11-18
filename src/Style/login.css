@@ -176,14 +176,16 @@
 @media (max-width: 1104px) {
     .login-container {
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         background-color: var(--unnamed-color-one);
         padding: 20px 20px;
+        height: 100%;
+        min-height: 100vh;
     }
 
     .login-content {
-        background-color: transparent;
+        display: none;
     }
 
     .login-form-content {
@@ -196,13 +198,6 @@
 }
 
 @media (max-width: 605px) {
-    .login-image {
-        width: 300px;
-        height: 300px;
-    }
-    .login-image img {
-        width: 50%;
-    }
     .login-form-content {
         padding: 40px 20px;
     }
